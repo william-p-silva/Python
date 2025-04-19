@@ -1,0 +1,5 @@
+cidade = str(input("Digite o nome da sua cidade: "))
+c = ' '.join(cidade.split())
+c = c.lower()
+c = c.split()
+print(c[0] == 'santo')
