@@ -9,7 +9,7 @@ print("Se for calcular a hipotenusa digite [1] se for calcular um dos catetos di
 escolha = (input("Digite sua escolha. Apenas números inteiros: "))
 
 while escolha == 1 or 2:
-    if escolha.isdigit():#isdigit só aceita números inteiros e pósitivos
+    if escolha.isdigit():#isdigit só aceita números inteiros e positivos
     #verifica se o valor diditado é um número
         if int(escolha) == 1 :
         #vai calcular a hipotenusa
