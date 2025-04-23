@@ -1,0 +1,9 @@
+
+
+def cont(n):
+    for c in range(n, -1, -1):
+        print(c)
+        
+
+t = int(input("Digite um numero "))
+cont(t)
