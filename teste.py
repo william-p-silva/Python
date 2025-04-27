@@ -1,4 +1,4 @@
 lista = [1,2,3,6,6,535,4]
 
-
-print(lista.count(9))
+lista.sort(reverse=True)
+print(f"Os valores em ordem decrescente são {lista}")
