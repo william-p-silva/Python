@@ -1,9 +1,9 @@
-def helloWord(str):
-    print(str)
+def helloWord(f):
+    print(f)
 
 
 dic = {'nome': "william", "idade": [12, 25, 65, 19]}
 
 for d in dic['idade']:
-    print(f"{d}")
+    helloWord(f"{d} ")
 
