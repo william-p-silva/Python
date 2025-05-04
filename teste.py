@@ -1,9 +1,12 @@
 def helloWord(f):
     print(f)
+    print(type(f))
+    for k, v in enumerate(f):
+        print(f"{v}", end='')
 
 
 dic = {'nome': "william", "idade": [12, 25, 65, 19]}
 
-for d in dic['idade']:
-    helloWord(f"{d} ")
+
+helloWord(f"{dic}")
 
