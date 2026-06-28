@@ -8,8 +8,8 @@ class Tv():
         self.canais = 5
         self.volume = 5
         self.canal_atual = 1
-        self.ligada = False
         self.volume_atual = 3
+        self.ligada = False
         
         
     def tela_tv(self):
@@ -52,7 +52,7 @@ class Tv():
     def controle(self):
         self.tela_tv()
         if self.ligada:
-            escolha = str(input("( < CH1 >   - VOL2 + ): "))
+            escolha = str(input("( < CH >   - VOL + ): "))
             if escolha == "@":
                 self.desligar_tv()
             if escolha == "-1":
@@ -73,16 +73,12 @@ class Tv():
                 
                 if self.canal_atual <= 1:
                     self.canal_atual = self.canais
-                elif self.canal_atual > self.canais:
-                    self.canal_atual = 1
                 else:
                     self.canal_atual -= 1
                     
             case ">":
                 
-                if self.canal_atual <= 0:
-                    self.canal_atual = self.canais
-                elif self.canal_atual == self.canais:
+                if self.canal_atual >= self.canais:
                     self.canal_atual = 1
                 else:
                     self.canal_atual += 1
